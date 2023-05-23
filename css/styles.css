@@ -1,0 +1,75 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: lightgray;
+    text-align: center;
+    padding: 2em;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 40em;
+    width: 95%;
+    font-size: 1.25em;
+}
+
+table, td {
+    border: 1px solid black;
+    padding: 0.5em;
+    border-collapse: collapse;
+}
+
+footer {
+    background-color: lightgray;
+    text-align: center;
+    padding: 2em;
+}
+/* Navigation */
+nav {
+    background-color: lightgray;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5em;
+}
+nav ul li a:hover {
+    color: white;
+    background-color: gray;
+}
+
+/* Treppe */
+.treppe, .treppe td{
+    border: 0;
+    border-collapse: collapse;
+}
+.treppe td{
+    height: 1em;
+    padding: 0.5em;
+}
+.treppen-stufe {
+    background: green;
+    color: white;
+}
+
+/* Helper */
+.center {
+    text-align: center;
+}
