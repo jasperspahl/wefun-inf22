@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-html {
+:root {
     --brand-light: #fab005;
     --brand-dark: #ffd8a8;
     --brand: var(--brand-light);
@@ -28,6 +28,19 @@ html {
     --surface-2: var(--surface-2-light);
     --surface-3: var(--surface-3-light);
     --surface-4: var(--surface-4-light);
+}
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --brand: var(--brand-dark);
+        --text-1: var(--text-1-dark);
+        --text-2: var(--text-2-dark);
+
+        --surface-1: var(--surface-1-dark);
+        --surface-2: var(--surface-2-dark);
+        --surface-3: var(--surface-3-dark);
+        --surface-4: var(--surface-4-dark);
+    }
 }
 
 body {
@@ -248,3 +261,4 @@ body {
         margin: 0 .5em .5em 0;
     }
 }
+
