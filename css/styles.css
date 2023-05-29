@@ -38,7 +38,6 @@ body {
     color: var(--text-1);
 }
 
-
 main {
     margin: 0 auto;
     max-width: 40em;
@@ -58,6 +57,7 @@ footer {
     text-align: center;
     padding: 2em;
 }
+
 /* Header */
 header {
     background-color: var(--surface-2);
@@ -154,7 +154,6 @@ header {
     }
 }
 
-
 /* Treppe */
 .treppe, .treppe td{
     border: 0;
@@ -165,11 +164,87 @@ header {
     padding: 0.5em;
 }
 .treppen-stufe {
-    background: green;
-    color: white;
+    background: var(--brand);
+    color: var(--surface-1);
 }
 
 /* Helper */
 .center {
     text-align: center;
+}
+
+/* Footnotes */
+body {
+    counter-reset: footnote;
+}
+
+[role="doc-endnotes"] {
+    counter-reset: footnote;
+}
+
+[role="doc-endnotes"] ol {
+    list-style-type: none;
+    counter-reset: footnote;
+}
+
+[role="doc-endnotes"] li {
+    counter-increment: footnote;
+    margin-bottom: 0.5em;
+}
+
+[role="doc-endnotes"] li::before {
+    content: counter(footnote) ". ";
+}
+
+[role="doc-noteref"] {
+    counter-increment: footnote;
+    text-decoration: none;
+}
+
+[role="doc-noteref"]::before {
+    content: "[" counter(footnote) "] ";
+    vertical-align: super;
+    font-size: small;
+}
+
+/* Thumb */
+.thumb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: .5em;
+}
+.thumb img {
+    width: 100vw;
+    height: auto;
+    max-height: 13em;
+    object-fit: cover;
+}
+.thumb-caption {
+    font-size: 0.8em;
+    text-align: center;
+}
+@media (min-width: 480px) {
+    .thumb {
+        float: right;
+        margin: 0 0 1em 1em;
+        max-width: 15em;
+        background: var(--surface-2);
+        border: 1px solid var(--text-2);
+        padding: 0.5em;
+    }
+    .thumb img {
+        width: 100%;
+        height: auto;
+    }
+    .thumb-right {
+        float: right;
+        clear: right;
+        margin: 0 0 .5em .5em;
+    }
+    .thumb-left {
+        float: left;
+        clear: left;
+        margin: 0 .5em .5em 0;
+    }
 }
