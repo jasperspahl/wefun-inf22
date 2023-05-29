@@ -1,16 +1,43 @@
 *, *::before, *::after{
     box-sizing: border-box;
 }
-body {
-    margin: 0;
-    padding: 0;
+
+html {
+    --brand-light: #fab005;
+    --brand-dark: #ffd8a8;
+    --brand: var(--brand-light);
+
+    --text-1-light: #343a40;
+    --text-1-dark: #dee2e6;
+    --text-2-light: #495057;
+    --text-2-dark: #adb5bd;
+    --text-1: var(--text-1-light);
+    --text-2: var(--text-2-light);
+
+    --surface-1-light: #f8f9fa;
+    --surface-2-light: #f1f3f5;
+    --surface-3-light: #e9ecef;
+    --surface-4-light: #dee2e7;
+
+    --surface-1-dark: #030507;
+    --surface-2-dark: #0d0f12;
+    --surface-3-dark: #16191d;
+    --surface-4-dark: #212529;
+
+    --surface-1: var(--surface-1-light);
+    --surface-2: var(--surface-2-light);
+    --surface-3: var(--surface-3-light);
+    --surface-4: var(--surface-4-light);
 }
 
-header {
-    background-color: lightgray;
-    text-align: center;
-    padding: 2em;
+body {
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--surface-1);
+    color: var(--text-1);
 }
+
 
 main {
     margin: 0 auto;
@@ -20,40 +47,113 @@ main {
 }
 
 table, td {
-    border: 1px solid black;
+    border: 1px solid var(--text-2);
     padding: 0.5em;
     border-collapse: collapse;
 }
 
 footer {
-    background-color: lightgray;
+    background-color: var(--surface-4);
+    color: var(--text-2);
     text-align: center;
     padding: 2em;
 }
-/* Navigation */
-nav {
-    background-color: lightgray;
+/* Header */
+header {
+    background-color: var(--surface-2);
     text-align: center;
-}
-nav ul {
-    list-style: none;
-    padding: 0;
+    padding: 1em;
+    justify-content: space-between;
+    align-items: center;
     display: flex;
-    justify-content: center;
+    height: 5rem;
+    margin-bottom: 1em;
 }
-nav ul li {
-    margin: 0 1em;
+.header-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.header-title {
+    font-size: 2em;
+    font-weight: bold;
+}
+.header-logo {
+    height: 2em;
+    width: 2em;
+    display: none;
 }
 
-nav ul li a {
+.nav-toggle-label {
+    font-size: 2em;
+}
+
+.nav-items {
+    display: none;
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    background: var(--surface-2);
+    width: 100%;
+    justify-content: center;
+
+}
+.nav-items ul {
+    font-size: 1.5em;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    gap: 1em;
+    padding: 1em;
+}
+.nav-items li {
+    width: 100%;
+    display: flex;
+    margin: auto
+}
+.nav-items li i {
+    width: 2em;
+}
+
+.nav-items a {
     text-decoration: none;
-    color: black;
-    padding: 0.5em;
+    color: var(--text-1);
 }
-nav ul li a:hover {
-    color: white;
-    background-color: gray;
+.nav-items a:hover {
+    color: var(--brand);
 }
+
+#nav-toggle:checked ~ .nav-items {
+    display: flex;
+}
+
+@media (min-width: 480px) {
+    .header-logo {
+        display: block;
+    }
+}
+@media (min-width: 768px) {
+    .nav-toggle-label {
+        display: none;
+    }
+    .nav-items {
+        position: unset;
+        display: flex;
+    }
+    .nav-items ul {
+        flex-direction: row;
+        justify-content: right;
+        gap: 1em;
+        font-size: 1em;
+        padding: 0;
+    }
+    .nav-items li {
+        width: auto;
+        display: block;
+    }
+}
+
 
 /* Treppe */
 .treppe, .treppe td{

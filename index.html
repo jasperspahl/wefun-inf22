@@ -5,21 +5,32 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Tischtennisverein DHBW</title>
+    <script src="https://kit.fontawesome.com/a6eecf466d.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <header>
-    <img src="https://placehold.co/64x64?text=Logo" alt="logo">
-    <h1>Tischtennisverein DHBW</h1>
+    <div class="header-logo-container">
+        <img class="header-logo" src="https://placehold.co/64x64?text=Logo" alt="logo">
+        <h2 class="header-title">Tischtennisverein DHBW</h2>
+    </div>
     <nav>
-        <ul>
-            <li><a href="#article-turnierImJuli">Turnier im Juli</a></li>
-            <li><a href="#section-registrierung">Registrierung</a></li>
-            <li><a href="#section-matchups">Matchups</a></li>
-            <li><a href="#section-siegertreppchen">Siegertreppchen</a></li>
-            <li><a href="#impressum">Impressum</a></li>
-        </ul>
+        <input type="checkbox" id="nav-toggle" hidden>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <i class="fas fa-bars"></i>
+        </label>
+        <div class="nav-items">
+            <ul>
+                <li><a class="nav-link" href="#article-turnierImJuli"><i class="fa-solid fa-table-tennis-paddle-ball"></i> Turnier im Juli</a></li>
+                <li><a class="nav-link" href="#section-registrierung"><i class="fa-solid fa-id-card"></i>&nbsp;Registrierung</a></li>
+                <li><a class="nav-link" href="#section-matchups"><i class="fa-solid fa-table-cells"></i>&nbsp;Matchups</a></li>
+                <li><a class="nav-link" href="#section-siegertreppchen"><i class="fa-solid fa-ranking-star"></i> Sieger</a></li>
+                <li><a class="nav-link" href="#impressum"><i class="fa-solid fa-section"></i>&nbsp;Impressum</a></li>
+            </ul>
+
+        </div>
     </nav>
 </header>
 <main>
@@ -168,6 +179,9 @@
             widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der
             unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.<br>
         </p><br>
+    </div>
+    <div id="quellen">
+        <p>Icons from <a href="https://fontawesome.com">Font Awesome</a> <i class="fa-brands fa-font-awesome"></i></p>
     </div>
 </footer>
 </body>
