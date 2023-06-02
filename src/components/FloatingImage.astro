@@ -1,0 +1,58 @@
+---
+export interface Props {
+    src: string;
+    alt?: string;
+    flow?: "left" | "right";
+}
+const {src, alt, flow = "right"} = Astro.props
+const margin = flow === "right" ? "0 0 .5em .5em": "0 .5em .5em 0";
+---
+<picture>
+    <img src="/img/table-tennis.png" alt="Example picture">
+    <figcaption>
+        <slot>
+            {alt}
+        </slot>
+    </figcaption>
+</picture>
+
+<style define:vars={{flow, margin}}>
+    picture {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: .5em;
+    }
+
+    picture img {
+        width: 100vw;
+        height: auto;
+        max-height: 13em;
+        object-fit: cover;
+    }
+
+    caption {
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    @media (min-width: 480px) {
+        picture {
+            margin: var(--margin);
+            max-width: 15em;
+            background: var(--surface-2);
+            border: 1px solid var(--text-2);
+            padding: 0.5em;
+            float: var(--flow);
+            clear: var(--flow);
+        }
+
+        picture img {
+            width: 100%;
+            height: auto;
+        }
+
+
+    }
+
+</style>

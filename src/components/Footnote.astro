@@ -1,0 +1,11 @@
+---
+export interface Props {
+    id: string;
+}
+const { id } = Astro.props
+---
+<li id={`fn${id}`} role="doc-endnote">
+    <slot/>
+    <a href={`#fnref${id}`}>↩</a>
+</li>
+

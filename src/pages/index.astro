@@ -1,50 +1,21 @@
 ---
 import "../styles/normalize.css"
 import "../styles/styles.css"
+import BaseLayout from "../layouts/BaseLayout.astro";
+import FootnoteLink from "../components/FootnoteLink.astro";
+import Footnote from "../components/Footnote.astro";
+import FloatingImage from "../components/FloatingImage.astro";
+const title = "Tischtennisverein DHBW"
+const description = "All thinks important about Tischtennis an der DHBW"
 ---
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tischtennisverein DHBW</title>
-    <script src="https://kit.fontawesome.com/a6eecf466d.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<header>
-    <div class="header-logo-container">
-        <img class="header-logo" src="https://placehold.co/64x64?text=Logo" alt="logo">
-        <h2 class="header-title">Tischtennisverein DHBW</h2>
-    </div>
-    <nav>
-        <input type="checkbox" id="nav-toggle" hidden>
-        <label for="nav-toggle" class="nav-toggle-label">
-            <i class="fas fa-bars"></i>
-        </label>
-        <div class="nav-items">
-            <ul>
-                <li><a class="nav-link" href="#article-turnierImJuli"><i class="fa-solid fa-table-tennis-paddle-ball"></i> Turnier im Juli</a></li>
-                <li><a class="nav-link" href="#section-registrierung"><i class="fa-solid fa-id-card"></i>&nbsp;Registrierung</a></li>
-                <li><a class="nav-link" href="#section-matchups"><i class="fa-solid fa-table-cells"></i>&nbsp;Matchups</a></li>
-                <li><a href="/table2" class="nav-link"><i class="fa-solid fa-table-cells"></i>&nbsp;Turnier mit 16 Teilnehmern</a></li>
-                <li><a class="nav-link" href="#section-siegertreppchen"><i class="fa-solid fa-ranking-star"></i>&nbsp;Sieger</a></li>
-                <li><a class="nav-link" href="#impressum"><i class="fa-solid fa-section"></i>&nbsp;Impressum</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
+<BaseLayout title={title} description={description}>
 <main>
     <article id="article-turnierImJuli">
         <section>
             <h3 class="center">Willkommen zum spannenden Tischtennisturnier der <dfn id="dfn-dhbw"><abbr title="Dualen Hochschule Baden-Württemberg">DHBW</abbr></dfn>!</h3>
-            <div class="thumb thumb-right">
-                <img src="/img/table-tennis.png" alt="Example picture">
-                <div class="thumb-caption">Example picture
-                    <a role="doc-noteref" href="#fn01" id="fnref01"></a>
-                </div>
-            </div>
+            <FloatingImage src="/img/table-tennis.png" alt="Example picture">
+                Example Picture<FootnoteLink id="01"/>
+            </FloatingImage>
             Wir freuen uns, euch zu einem energiegeladenen Tag voller Wettkämpfe, sportlicher Rivalität und Spaß am
             Tischtennis einzuladen.<br>
             Unser Turnier richtet sich speziell an die talentierten und enthusiastischen Studenten der
@@ -158,56 +129,12 @@ import "../styles/styles.css"
         </table>
     </section>
 </main>
-<footer>
-    <div id="impressum"><h3>Impressum</h3>
-        <p>Angaben gemäß § 5 TMG</p>
-        <address>Max Muster <br>
-            Musterweg<br>
-            12345 Musterstadt <br>
-        </address>
-        <p><strong>Vertreten durch: </strong><br>
-            Max Mustermann<br>
-        </p>
-        <p><strong>Kontakt:</strong> <br>
-            Telefon: 01234-789456<br>
-            Fax: 1234-56789<br>
-            E-Mail: <a href='mailto:max@muster.de'>max@muster.de</a><br/></p>
-        <p><strong>Umsatzsteuer-ID: </strong> <br>
-            Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz: Musterustid.<br><br>
-            <strong>Wirtschafts-ID: </strong><br>
-            Musterwirtschaftsid<br>
-        </p>
-        <p><strong>Aufsichtsbehörde:</strong><br>
-            Musteraufsicht Musterstadt<br></p>
-        <p><strong>Haftungsausschluss: </strong><br><br><strong>Datenschutz</strong><br><br>
-            Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf
-            unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben werden,
-            erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche
-            Zustimmung nicht an Dritte weitergegeben. <br>
-            Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail)
-            Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht
-            möglich. <br>
-            Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung
-            von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich
-            widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der
-            unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.<br>
-        </p><br>
-    </div>
-    <div id="quellen">
-        <h3>Quellen</h3>
-        <p>Icons from <a href="https://fontawesome.com">Font Awesome</a> <i class="fa-brands fa-font-awesome"></i></p>
-        <div id="footnotes" role="doc-endnotes">
-            <ol>
-                <li id="fn01" role="doc-endnote">
-                    Pixabay. (2023). Tischtennis, Ball, Schläger. Abgerufen am 29.05.2023 von
-                    <a href="https://pixabay.com/de/illustrations/tischtennis-ball-schl%c3%a4ger-sport-7415980/">
-                        pixabay.com
-                    </a>
-                    <a href="#fnref01">↩</a>
-                </li>
-            </ol>
-        </div>
-    </div>
-</footer>
-</body>
-</html>
+<ol slot="footnotes">
+    <Footnote id="01">
+        Pixabay. (2023). Tischtennis, Ball, Schläger. Abgerufen am 29.05.2023 von
+        <a href="https://pixabay.com/de/illustrations/tischtennis-ball-schl%c3%a4ger-sport-7415980/">
+            pixabay.com
+        </a>
+    </Footnote>
+</ol>
+</BaseLayout>

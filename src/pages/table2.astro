@@ -1,26 +1,8 @@
 ---
 import "../styles/styles.css"
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Matchup Tabelle</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-        main {
-            max-width: 100%;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
+<BaseLayout title="Matchup Tabelle">
 <main>
     <h2>Matchup Tabelle</h2>
     <table>
@@ -83,8 +65,17 @@ import "../styles/styles.css"
 
         </tbody>
     </table>
-    <a href="/index">Home</a><br>
-    <a href="/index#section-matchups">Tabelle 8 Teilnehmern</a>
+    <a href="/#section-matchups">Home</a><br>
+    <a href="/table">Tabelle 8 Teilnehmern</a>
 </main>
-</body>
-</html>
+</BaseLayout>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    main {
+        max-width: 100%;
+        width: 100%;
+    }
+</style>

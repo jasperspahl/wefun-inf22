@@ -1,0 +1,7 @@
+---
+export interface Props {
+    id: string;
+}
+const {id } = Astro.props
+---
+<a role="doc-noteref" href={`#fn${id}`} id={`fnref${id}`}></a>
