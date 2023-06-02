@@ -62,6 +62,7 @@ table, td {
     border: 1px solid var(--text-2);
     padding: 0.5em;
     border-collapse: collapse;
+    text-align: center;
 }
 
 footer {
