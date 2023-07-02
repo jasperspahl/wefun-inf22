@@ -1,0 +1,45 @@
+html{
+    height: 100%;
+}
+
+.tournementWrapper {
+    display: grid;
+    grid-template-areas: 
+        "Main"
+        "Footer";
+    grid-template-columns: 2fr;
+    grid-template-rows: auto 1fr;
+}
+
+main {
+    opacity: 1;
+    max-width: 100%;
+    width: 100%;
+    grid-area: Main;
+}
+
+table {
+    border-spacing: 0;
+    border-radius: 30px;
+    width: 100%;
+    table-layout: auto;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+footer {
+    opacity: 0.7;
+    grid-area: Footer;
+    background-image: url("../img/footer_background.png");
+    image-rendering: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
