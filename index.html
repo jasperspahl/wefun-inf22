@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Tischtennisverein DHBW</title>
     <script src="https://kit.fontawesome.com/a6eecf466d.js" crossorigin="anonymous"></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
@@ -27,14 +28,14 @@
                 </label>
                 <div class="nav-items">
                     <ul>
-                        <li><a href="table2.html" class="nav-link"><i class="fa-solid fa-table-cells"></i>&nbsp;Turnier mit 16 Teilnehmern</a></li>
+                        <li><a href="tournement.html" class="nav-link"><i class="fa-solid fa-table-cells"></i>&nbsp;Turnier mit 16 Teilnehmern</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
 
-        <div class="nav-site">
-            <ul>
+        <div class="nav-side">
+            <ul id="side-list">
                 <li><a class="nav-link" href="#article-turnierImJuli"><i class="fa-solid fa-table-tennis-paddle-ball"></i> Turnier im Juli</a></li>
                 <li><a class="nav-link" href="#section-registrierung"><i class="fa-solid fa-id-card"></i>&nbsp;Registrierung</a></li>
                 <li><a class="nav-link" href="#section-matchups"><i class="fa-solid fa-table-cells"></i>&nbsp;Matchups</a></li>
@@ -108,8 +109,9 @@
             <hr/>
 
             <section id="section-matchups">
-                <h2>Matchups</h2><br/>
-                <table>
+                
+                <table id="smallTable">
+                    <caption><h2>Matchups</h2></caption>
                     <tbody>
                         <tr>
                             <td>Person 1</td>
@@ -143,27 +145,29 @@
                     </tr>
                     <tr>
                         <td colspan="4">
-                            <a href="table2.html">Tabelle mit 16 Teilnehmern</a>
+                            <a href="tournement.html">Tabelle mit 16 Teilnehmern</a>
                         </td>
                     </tr>
                     </tfoot>
                 </table>
             </section>
             <section id="section-siegertreppchen">
-                <h2>Siegertreppchen</h2>
                 <table class="treppe">
-                    <tr>
-                        <td></td>
-                        <td rowspan="3" class="treppen-stufe">Platz 1</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2" class="treppen-stufe">Platz 2</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="treppen-stufe">Platz 3</td>
-                    </tr>
+                    <caption><h2>Siegertreppchen</h2></caption>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td rowspan="3" class="treppen-stufe">Platz 1</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" class="treppen-stufe">Platz 2</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="treppen-stufe">Platz 3</td>
+                        </tr>
+                    </tbody>
                 </table>
             </section>
         </main>
