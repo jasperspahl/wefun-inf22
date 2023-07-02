@@ -58,58 +58,12 @@
 body {
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
     font-style: normal;
+    counter-reset: footnote;
     margin: 0;
     padding: 0;
     background-color: var(--surface-1);
     color: var(--text-1);
     word-spacing: normal;
-}
-
-.nav-side{
-    grid-area: nav;
-    padding: 1em;
-    border-radius: 1em;
-    font-size: 1.5em;
-    gap: 1em;
-    padding: 1em;
-    background: var(--surface-2);
-    justify-content: center;
-    outline: medium solid var(--surface-3);
-}
-#side-list{
-    position: sticky;
-    top: 3em;
-}
-.nav-link{
-    color: var(--text-1);;
-}
-
-main {
-    margin: 0 auto;
-    max-width: 40em;
-    width: 95%;
-    font-size: 1.25em;
-    grid-area: main;
-}
-
-table, td {
-    border: 1px solid var(--text-2);
-    padding: 0.5em;
-    border-collapse: collapse;
-    text-align: center;
-    caption-side: top;
-
-}
-#section-matchups{
-    cursor: zoom-in;
-}
-
-footer {
-    background-color: var(--surface-4);
-    color: var(--text-2);
-    text-align: center;
-    padding: 2em;
-    grid-area: footer;
 }
 
 /* Header */
@@ -138,11 +92,10 @@ header {
     width: 2em;
     display: none;
 }
-
+/* Header Navigation*/
 .nav-toggle-label {
     font-size: 2em;
 }
-
 .nav-items {
     display: none;
     position: fixed;
@@ -181,6 +134,70 @@ header {
 #nav-toggle:checked ~ .nav-items {
     display: flex;
 }
+
+/* Main page navigation*/
+.nav-side{
+    grid-area: nav;
+    padding: 1em;
+    border-radius: 1em;
+    font-size: 1.5em;
+    gap: 1em;
+    padding: 1em;
+    background: var(--surface-2);
+    justify-content: center;
+    outline: medium solid var(--surface-3);
+}
+.nav-side a{
+    color: var(--text-1);
+    text-decoration: none;
+}
+.nav-side a:hover{
+    color: var(--brand);
+}
+#side-list{
+    position: sticky;
+    top: 3em;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 40em;
+    width: 95%;
+    font-size: 1.25em;
+    grid-area: main;
+}
+
+#info + ul > li{
+    list-style-type: "\1F44D";
+    margin: 0;
+    padding: 0;
+}
+
+table, td {
+    border: 1px solid var(--text-2);
+    padding: 0.5em;
+    border-collapse: collapse;
+    text-align: center;
+    caption-side: top;
+
+}
+#section-matchups{
+    cursor: zoom-in;
+}
+
+footer {
+    background-color: var(--surface-4);
+    color: var(--text-2);
+    text-align: center;
+    padding: 2em;
+    grid-area: footer;
+}
+
+#imperssumParagraph ~ p {
+    margin-top: 0;
+    opacity: 0.7;
+}
+
 
 @media (min-width: 480px) {
     .header-logo {
@@ -229,10 +246,6 @@ header {
 }
 
 /* Footnotes */
-body {
-    counter-reset: footnote;
-}
-
 [role="doc-endnotes"] {
     counter-reset: footnote;
 }
