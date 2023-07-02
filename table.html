@@ -3,74 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Matchup Tabelle</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-        main {
-            max-width: 100%;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="css/turniertabellen.css">
+    <title>Tischtennisverein DHBW</title>
+    <script src="https://kit.fontawesome.com/a6eecf466d.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-
-<header>
-    <div class="header-logo-container">
-        <img class="header-logo" src="img/ping-pong-red-blue.png" alt="logo">
-        <h2 class="header-title">Tischtennisverein DHBW</h2>
-    </div>
-    <nav>
-        <input type="checkbox" id="nav-toggle" hidden>
-        <label for="nav-toggle" class="nav-toggle-label">
-            <i class="fas fa-bars"></i>
-        </label>
-        <div class="nav-items">
-            <ul><a href="turnier2020.html" class="nav-link">Turnier 2020</a></ul>
-            <ul><a href="turnier2021.html" class="nav-link">Turnier 2021</a></ul>
-            <ul><a href="turnier2022.html" class="nav-link">Turnier 2022</a></ul>
-            <ul><a href="index.html" class="nav-link">Zurück zur Hauptseite</a></ul>
+<div class="turniertabelle-wrapper">
+    <header>
+        <div class="header-logo-container">
+            <img class="header-logo" src="img/ping-pong-red-blue.png" alt="logo">
+            <h2 class="header-title">Turnier 2023</h2>
         </div>
-    </nav>
-</header>
-
-<main>
-    <audio loop autoplay>
-        <source src="mp3/free-crowd-cheering-sounds.mp3" type="audio/mpeg">
-    </audio>
-    <h2>Matchup Tabelle</h2>
-    <table>
-        <tbody>
+        <nav>
+            <input type="checkbox" id="nav-toggle" hidden>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <i class="fas fa-bars"></i>
+            </label>
+            <div class="nav-items">
+                <ul><a href="index.html" class="nav-link">Zurück zur Hauptseite</a></ul>
+                <ul><a href="turnier2020.html" class="nav-link">Turnier 2020</a></ul>
+                <ul><a href="turnier2021.html" class="nav-link">Turnier 2021</a></ul>
+                <ul><a href="turnier2022.html" class="nav-link">Turnier 2022</a></ul>
+                <ul><a href="table.html" class="nav-link"><i class="fa-solid fa-table-cells"></i>Turnier 2023</a></ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <article class="turniertabelle-main">
+            <h3>Turnier Nr. 4</h3>
+            <p>Das 4. Turnier, das von der DHBW veranstaltet wurde! Es hat im Jahr 2023 in der Rosensteinschule Turnhalle (Nordbahnhofstraße 120, 70191 Stuttgart) stattgefunden.</p>
+            <table class="turniertabelle">
+                <tbody>
+                    <tr>
+                        <td>Person 1</td>
+                        <td rowspan="2">Viertelfinale 1<br/><time datetime="2023-05-30 18:00">30.05, 18:00</time><br/>Sieger Viertelfinale 1</td>
+                        <td rowspan="4">Halbfinale 1<br/><time datetime="2023-06-05 18:00">05.06, 18:00</time><br/>Sieger Halbfinale 1</td>
+                        <td rowspan="8">Finale<br/><time datetime="2023-06-09 18:00">9.06.2023, 18:00</time><br/>Sieger</td>
+                    </tr>
+                    <tr><td>Person 2</td></tr>
+                    <tr>
+                        <td>Person 3</td>
+                        <td rowspan="2">Viertelfinale 2<br/><time datetime="2023-05-31 18:00">31.05, 18:00</time><br/>Sieger Viertelfinale 2</td>
+                    </tr>
+                    <tr><td>Person 4</td></tr>
+                    <tr>
+                        <td>Person 5</td>
+                        <td rowspan="2">Viertelfinale 3<br/><time datetime="2023-06-01 18:00">01.06, 18:00</time><br/>Sieger Viertelfinale 3</td>
+                        <td rowspan="4">Halbfinale 2<br/><time datetime="2023-06-06 18:00">06.06.2023, 18:00</time><br/>Sieger Halbfinale 2</td>
+                    </tr>
+                    <tr><td>Person 6</td></tr>
+                    <tr>
+                        <td>Person 7</td>
+                        <td rowspan="2">Viertelfinale 4<br/><time datetime="2023-06-02 18:00">02.06, 18:00</time><br/>Sieger Viertelfinale 4</td>
+                    </tr>
+                    <tr><td>Person 8</td></tr>
+                </tbody>
+            </table>
+        </article>
+    </main>
+    <aside>
+        <h3>Teilnehmerliste</h3>
+        <ol>
+            <li>Silvia Bender</li>
+            <li>Rebecca Taylor</li>
+            <li>Erika Pollmann</li>
+            <li>Sigrid Holzer</li>
+            <li>Sibylle Gerold</li>
+            <li>Kai Hoppe</li>
+            <li>Elli Stoehr</li>
+            <li>Marie Lorenz</li>
+            <li>Stefanie Raißle</li>
+            <li>Jannik Röhm</li>
+            <li>Zacharias Neff</li>
+            <li>Isabel Borst</li>
+            <li>Pedro Fernandez</li>
+            <li>Sabiene Spitz</li>
+            <li>Luca Niemeyer</li>
+            <li>Edgar Drögemüller</li>
+        </ol>
+        <h2>Siegertreppchen</h2>
+        <table class="treppe">
             <tr>
-                <td>Person 1</td>
-                <td rowspan="2">Viertelfinale 1<br/><time datetime="2023-05-30 18:00">30.05, 18:00</time><br/>Sieger Viertelfinale 1</td>
-                <td rowspan="4">Halbfinale 1<br/><time datetime="2023-06-05 18:00">05.06, 18:00</time><br/>Sieger Halbfinale 1</td>
-                <td rowspan="8">Finale<br/><time datetime="2023-06-09 18:00">9.06.2023, 18:00</time><br/>Sieger</td>
+                <td></td>
+                <td rowspan="3" class="treppen-stufe">Platz 1</td>
+                <td></td>
             </tr>
-            <tr><td>Person 2</td></tr>
             <tr>
-                <td>Person 3</td>
-                <td rowspan="2">Viertelfinale 2<br/><time datetime="2023-05-31 18:00">31.05, 18:00</time><br/>Sieger Viertelfinale 2</td>
+                <td rowspan="2" class="treppen-stufe">Platz 2</td>
+                <td></td>
             </tr>
-            <tr><td>Person 4</td></tr>
             <tr>
-                <td>Person 5</td>
-                <td rowspan="2">Viertelfinale 3<br/><time datetime="2023-06-01 18:00">01.06, 18:00</time><br/>Sieger Viertelfinale 3</td>
-                <td rowspan="4">Halbfinale 2<br/><time datetime="2023-06-06 18:00">06.06.2023, 18:00</time><br/>Sieger Halbfinale 2</td>
+                <td class="treppen-stufe">Platz 3</td>
             </tr>
-            <tr><td>Person 6</td></tr>
-            <tr>
-                <td>Person 7</td>
-                <td rowspan="2">Viertelfinale 4<br/><time datetime="2023-06-02 18:00">02.06, 18:00</time><br/>Sieger Viertelfinale 4</td>
-            </tr>
-            <tr><td>Person 8</td></tr>
-        </tbody>
-    </table>
-</main>
+        </table>
+    </aside>
+</div>
 </body>
 </html>

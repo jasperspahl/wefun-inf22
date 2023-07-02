@@ -1,0 +1,33 @@
+/* Turniertabellen Unterseiten */
+
+.turniertabelle-wrapper{
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "main aside"
+        "main table";   
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 1em;
+}
+
+.turniertabelle-wrapper > header {
+    grid-area: header;
+}
+
+.turniertabelle-wrapper > aside {
+    grid-area: aside;
+  background-color: #8ca0ff;
+}
+
+.turniertabelle-wrapper > aside > ol {
+    padding-left: 1.5em;
+}
+
+.turniertabelle-wrapper > main {
+    grid-area: main;
+}
+
+.turniertabelle {
+    width: 100%;
+}

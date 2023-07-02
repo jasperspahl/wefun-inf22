@@ -64,17 +64,25 @@ body {
     color: var(--text-1);
 }
 
-.nav-site{
+.nav-site {
     grid-area: nav;
     padding: 1em;
     border-radius: 1em;
     font-size: 1.5em;
     gap: 1em;
-    padding: 1em;
     background: var(--surface-2);
     justify-content: center;
-    
 }
+
+.nav-site > p > a {
+    text-decoration: none;
+    color: var(--text-1);
+    margin-bottom: 1em;
+}
+.nav-site > p > a:hover {
+    color: var(--brand);
+}
+
 .nav-link{
     color: var(--text-1);;
 }
