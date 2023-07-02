@@ -3,29 +3,26 @@
 .turniertabelle-wrapper{
     display: grid;
     grid-template-areas: 
-        "header header"
-        "main aside"
-        "main table";   
+        "b b"
+        "t l"; 
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: 1fr auto;
     gap: 1em;
+    padding-left: 3em;
+    padding-bottom: 3em;
 }
 
-.turniertabelle-wrapper > header {
-    grid-area: header;
+.turniertabelle-wrapper > section {
+    grid-area: b;
+}
+
+.turniertabelle-wrapper > article {
+    grid-area: t;
 }
 
 .turniertabelle-wrapper > aside {
-    grid-area: aside;
-  background-color: #8ca0ff;
-}
-
-.turniertabelle-wrapper > aside > ol {
+    grid-area: l;
     padding-left: 1.5em;
-}
-
-.turniertabelle-wrapper > main {
-    grid-area: main;
 }
 
 .turniertabelle {

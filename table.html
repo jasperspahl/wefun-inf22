@@ -13,59 +13,83 @@
 </head>
 
 <body>
-<div class="turniertabelle-wrapper">
-    <header>
-        <div class="header-logo-container">
-            <img class="header-logo" src="img/ping-pong-red-blue.png" alt="logo">
-            <h2 class="header-title">Turnier 2023</h2>
+<header>
+    <div class="header-logo-container">
+        <img class="header-logo" src="img/ping-pong-red-blue.png" alt="logo">
+        <h2 class="header-title">Turnier 2023</h2>
+    </div>
+    <nav>
+        <input type="checkbox" id="nav-toggle" hidden>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <i class="fas fa-bars"></i>
+        </label>
+        <div class="nav-items">
+            <ul><a href="index.html" class="nav-link">Zurück zur Hauptseite</a></ul>
+            <ul><a href="turnier2020.html" class="nav-link">Turnier 2020</a></ul>
+            <ul><a href="turnier2021.html" class="nav-link">Turnier 2021</a></ul>
+            <ul><a href="turnier2022.html" class="nav-link">Turnier 2022</a></ul>
+            <ul><a href="table.html" class="nav-link"><i class="fa-solid fa-table-cells"></i>Turnier 2023</a></ul>
         </div>
-        <nav>
-            <input type="checkbox" id="nav-toggle" hidden>
-            <label for="nav-toggle" class="nav-toggle-label">
-                <i class="fas fa-bars"></i>
-            </label>
-            <div class="nav-items">
-                <ul><a href="index.html" class="nav-link">Zurück zur Hauptseite</a></ul>
-                <ul><a href="turnier2020.html" class="nav-link">Turnier 2020</a></ul>
-                <ul><a href="turnier2021.html" class="nav-link">Turnier 2021</a></ul>
-                <ul><a href="turnier2022.html" class="nav-link">Turnier 2022</a></ul>
-                <ul><a href="table.html" class="nav-link"><i class="fa-solid fa-table-cells"></i>Turnier 2023</a></ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <article class="turniertabelle-main">
-            <h3>Turnier Nr. 4</h3>
-            <p>Das 4. Turnier, das von der DHBW veranstaltet wurde! Es hat im Jahr 2023 in der Rosensteinschule Turnhalle (Nordbahnhofstraße 120, 70191 Stuttgart) stattgefunden.</p>
-            <table class="turniertabelle">
-                <tbody>
-                    <tr>
-                        <td>Person 1</td>
-                        <td rowspan="2">Viertelfinale 1<br/><time datetime="2023-05-30 18:00">30.05, 18:00</time><br/>Sieger Viertelfinale 1</td>
-                        <td rowspan="4">Halbfinale 1<br/><time datetime="2023-06-05 18:00">05.06, 18:00</time><br/>Sieger Halbfinale 1</td>
-                        <td rowspan="8">Finale<br/><time datetime="2023-06-09 18:00">9.06.2023, 18:00</time><br/>Sieger</td>
-                    </tr>
-                    <tr><td>Person 2</td></tr>
-                    <tr>
-                        <td>Person 3</td>
-                        <td rowspan="2">Viertelfinale 2<br/><time datetime="2023-05-31 18:00">31.05, 18:00</time><br/>Sieger Viertelfinale 2</td>
-                    </tr>
-                    <tr><td>Person 4</td></tr>
-                    <tr>
-                        <td>Person 5</td>
-                        <td rowspan="2">Viertelfinale 3<br/><time datetime="2023-06-01 18:00">01.06, 18:00</time><br/>Sieger Viertelfinale 3</td>
-                        <td rowspan="4">Halbfinale 2<br/><time datetime="2023-06-06 18:00">06.06.2023, 18:00</time><br/>Sieger Halbfinale 2</td>
-                    </tr>
-                    <tr><td>Person 6</td></tr>
-                    <tr>
-                        <td>Person 7</td>
-                        <td rowspan="2">Viertelfinale 4<br/><time datetime="2023-06-02 18:00">02.06, 18:00</time><br/>Sieger Viertelfinale 4</td>
-                    </tr>
-                    <tr><td>Person 8</td></tr>
-                </tbody>
-            </table>
-        </article>
-    </main>
+    </nav>
+</header>
+<div class="turniertabelle-wrapper">
+    <section>
+        <h3>Turnier Nr. 4</h3>
+        <p>Das 4. Turnier, das von der DHBW veranstaltet wurde! Es hat im Jahr 2023 in der Rosensteinschule Turnhalle (Nordbahnhofstraße 120, 70191 Stuttgart) stattgefunden.</p>
+    </section>
+    <article>
+        <table class="turniertabelle">
+            <tbody>
+                <tr>
+                    <td>Person 1</td>
+                    <td rowspan="2">Spiel 1<br/><time datetime="2023-05-30 18:00">30.05, 18:00</time><br/>Sieger Spiel 1</td>
+                    <td rowspan="4">Viertelfinale 1<br/><time datetime="2023-06-05 18:00">05.06, 18:00</time><br/>Sieger Viertelfinale 1</td>
+                    <td rowspan="8">Halbfinale 1<br/><time datetime="2023-06-09 18:00">9.06.2023, 18:00</time><br/>Sieger Halbfinale 1</td>
+                    <td rowspan="16">Finale<br/><time datetime="2023-06-09 18:00">9.06.2023, 18:00</time><br/>Sieger</td>
+                </tr>
+                <tr><td>Person 2</td></tr>
+                <tr>
+                    <td>Person 3</td>
+                    <td rowspan="2">Spiel 2<br/><time datetime="2023-05-31 18:00">31.05, 18:00</time><br/>Sieger Spiel 2</td>
+                </tr>
+                <tr><td>Person 4</td></tr>
+                <tr>
+                    <td>Person 5</td>
+                    <td rowspan="2">Spiel 3<br/><time datetime="2023-06-01 18:00">01.06, 18:00</time><br/>Sieger Spiel 3</td>
+                    <td rowspan="4">Viertelfinale 2<br/><time datetime="2023-06-06 18:00">06.06.2023, 18:00</time><br/>Sieger Viertelfinale 2</td>
+                </tr>
+                <tr><td>Person 6</td></tr>
+                <tr>
+                    <td>Person 7</td>
+                    <td rowspan="2">Spiel 4<br/><time datetime="2023-06-02 18:00">02.06, 18:00</time><br/>Sieger Spiel 4</td>
+                </tr>
+                <tr><td>Person 8</td></tr>
+                <tr>
+                    <td>Person 9</td>
+                    <td rowspan="2">Spiel 5<br/><time datetime="2023-05-30 19:00">30.05, 19:00</time><br/>Sieger Spiel 5</td>
+                    <td rowspan="4">Viertelfinale 3<br/><time datetime="2023-06-05 19:00">05.06, 19:00</time><br/>Sieger Viertelfinale 3</td>
+                    <td rowspan="8">Halbfinale 2<br/><time datetime="2023-06-09 19:00">9.06.2023, 19:00</time><br/>Sieger Halbfinale 2</td>
+                </tr>
+                <tr><td>Person 10</td></tr>
+                <tr>
+                    <td>Person 11</td>
+                    <td rowspan="2">Spiel 6<br/><time datetime="2023-05-31 19:00">31.05, 19:00</time><br/>Sieger Spiel 6</td>
+                </tr>
+                <tr><td>Person 12</td></tr>
+                <tr>
+                    <td>Person 13</td>
+                    <td rowspan="2">Spiel 7<br/><time datetime="2023-06-01 19:00">01.06, 19:00</time><br/>Sieger Spiel 7</td>
+                    <td rowspan="4">Viertelfinale 4<br/><time datetime="2023-06-06 19:00">06.06.2023, 19:00</time><br/>Sieger Viertelfinale 4</td>
+                </tr>
+                <tr><td>Person 14</td></tr>
+                <tr>
+                    <td>Person 15</td>
+                    <td rowspan="2">Spiel 8<br/><time datetime="2023-06-02 19:00">02.06, 19:00</time><br/>Sieger Spiel 8</td>
+                </tr>
+                <tr><td>Person 16</td></tr>
+            </tbody>
+        </table>
+    </article>
     <aside>
         <h3>Teilnehmerliste</h3>
         <ol>
@@ -86,7 +110,8 @@
             <li>Luca Niemeyer</li>
             <li>Edgar Drögemüller</li>
         </ol>
-        <h2>Siegertreppchen</h2>
+        </br>
+        <h3>Siegertreppchen</h3>
         <table class="treppe">
             <tr>
                 <td></td>
