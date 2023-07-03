@@ -190,6 +190,71 @@ main {
     margin: 0;
     padding: 0;
 }
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    color: var(--brand);
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 3em;
+    background-color: var(--surface-1);
+    color: var(--text-1);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -1em;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* image overlay */
+.imgContainer {
+    position: relative;
+}
+  
+.pingPongImage {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
+
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #004aba;
+}
+  
+.imgContainer:hover .overlay {
+    opacity: 1;
+}
+  
+.imageText {
+    color: var(--text-1);
+    font-size: 0.8em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 table, td {
     border: 1px solid var(--text-2);
     padding: 0.5em;
@@ -411,7 +476,7 @@ abbr {
         max-width: 15em;
         background: var(--surface-2);
         border: 1px solid var(--text-2);
-        padding: 0.5em;
+        /* padding: 0.5em; */
     }
     .thumb img {
         width: 100%;
