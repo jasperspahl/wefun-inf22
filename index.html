@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Tischtennisverein DHBW</title>
-    <script src="https://kit.fontawesome.com/a6eecf466d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cb31073fef.js" crossorigin="anonymous"></script>
     <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -51,10 +51,15 @@
                 <section>
                     <h3 class="center">Willkommen zum spannenden Tischtennisturnier der <dfn id="dfn-dhbw"><abbr title="Dualen Hochschule Baden-Württemberg">DHBW</abbr></dfn>!</h3>
                     <div class="thumb thumb-right">
-                        <img src="img/table-tennis.png" alt="Example picture">
-                        <div class="thumb-caption">Example picture
+                        <div class="imgContainer">
+                            <img src="img/table-tennis.png" alt="Example picture" class="pingPongImage">
+                            <div class="overlay">
+                              <div class="imageText">Willkommen!</div>
+                            </div>
+                          </div>
+                        <!-- <div class="thumb-caption">Example picture
                             <a role="doc-noteref" href="#fn01" id="fnref01"></a>
-                        </div>
+                        </div> -->
                     </div>
                     Wir freuen uns, euch zu einem energiegeladenen Tag voller Wettkämpfe, sportlicher Rivalität und Spaß am
                     Tischtennis einzuladen.<br>
@@ -94,7 +99,7 @@
                         <li>Wasserflasche und Snacks</li>
                         <li>Bandagen oder Schutzmittel</li>
                         <li>Spielplan und Regelbuch</li>
-                        <li>Geld und Ausweis</li>
+                        <li><div class="tooltip">Geld <span class="tooltiptext">2000€</span></div> und Ausweis</li>
                     </ul>
                 </section>
                 <hr/>
