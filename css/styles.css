@@ -355,9 +355,13 @@ abbr {
 
     .treppe, .treppe td{
         display: table-cell;
-        padding-left: 1.5em;
+        padding-left: 1em;
+        padding-right: 1em;
     }
-
+    /* Raise Gold medal 1em higher */
+    .treppe > tbody > tr > td + td > i {
+        margin-bottom: 1em;
+    }
 }
 @media (min-width: 460px) {
     #smallTable{
