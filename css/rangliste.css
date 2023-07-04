@@ -1,0 +1,29 @@
+.flexWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.flexWrapper > * {
+    margin: 0 5em;
+}
+
+.flexWrapper > *:first-child {
+    margin-left: 0;
+}
+
+.flexWrapper > *:last-child {
+    margin-right: 0;
+}
+.flexWrapper ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.flexWrapper i {
+    font-size: 1.5em;
+    margin: 0 0 0 1em;
+}
