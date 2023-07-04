@@ -5,10 +5,15 @@ html{
 .tournamentWrapper {
     display: grid;
     grid-template-areas: 
+        "Header"
         "Main"
         "Footer";
     grid-template-columns: 2fr;
     grid-template-rows: auto 1fr;
+}
+
+header{
+    grid-area: Header;
 }
 
 main {
