@@ -96,10 +96,6 @@ time {
     font-size: smaller;
 }
 
-#section-siegertreppchen{
-    margin-bottom: 3em;
-}
-
 /* Header */
 header {
     background-color: var(--surface-2);
@@ -328,6 +324,10 @@ abbr {
     opacity: 0.7;
 }
 
+#section-siegertreppchen{
+    margin-bottom: 3em;
+}
+
 @media (min-width: 300px) {
 
     body{
@@ -398,6 +398,8 @@ abbr {
 @media (min-width: 460px) {
     #smallTable{
         display: table;
+        table-layout: fixed;
+        width: fit-content;
     }
 }
 @media (min-width: 600px) {
@@ -410,6 +412,7 @@ abbr {
     .nav-items {
         position: unset;
         display: flex;
+        flex-wrap: wrap;
     }
     .nav-items ul {
         flex-direction: row;
@@ -422,6 +425,9 @@ abbr {
     .nav-items li {
         width: auto;
         display: block;
+    }
+    header {
+        height: fit-content;
     }
 }
 

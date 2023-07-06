@@ -16,6 +16,10 @@
 }
 
 @media (min-width: 600px) {
+    .turniertabelle-wrapper{
+        padding-left: 3em;
+        padding-right: 3em;
+    }
     .turniertabelle-wrapper > aside {
         display: grid;
         grid-template-areas:
@@ -45,7 +49,6 @@
         grid-template-columns: 3fr 1fr;
         grid-template-rows: auto;
         gap: 1em;
-        padding-left: 3em;
     }
     .turniertabelle-wrapper > section {
         grid-area: beschreibung;
