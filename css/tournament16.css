@@ -35,16 +35,3 @@ td, th {
     text-align: center;
     padding: 8px;
 }
-
-footer {
-    opacity: 0.7;
-    grid-area: Footer;
-    background-image: url("../img/footer_background.png");
-    image-rendering: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
