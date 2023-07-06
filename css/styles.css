@@ -96,6 +96,10 @@ time {
     font-size: smaller;
 }
 
+#section-siegertreppchen{
+    margin-bottom: 3em;
+}
+
 /* Header */
 header {
     background-color: var(--surface-2);
