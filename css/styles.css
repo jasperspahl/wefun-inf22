@@ -87,6 +87,15 @@ hr {
     margin-bottom: 2em;
 }
 
+.beschriftung {
+    background-color: var(--surface-4);   
+}
+
+time {
+    color: var(--text-2-dark);
+    font-size: smaller;
+}
+
 /* Header */
 header {
     background-color: var(--surface-2);
