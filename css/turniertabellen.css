@@ -62,4 +62,38 @@
     .turniertabelle-wrapper > aside {
         display: block;
     }
+
+.turniertabelle {
+    width: 100%;
+}
+
+input {
+    width: 2.5em;
+    height: 1.2em;
+    margin-bottom: 1em;
+    text-align: center;
+    margin-top: 0.3em;
+}
+
+button {
+    width: 2em;
+    height: 1.5em;
+    font-size: 0.8em;
+}
+
+.turniertabelle p{
+    margin: 0;
+    padding: 0;
+}
+
+.treppe td {
+    padding: 0.5em;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.treppe, .treppe td{
+    display: table-cell;
+    padding-left: 1em;
+    padding-right: 1em;
 }
