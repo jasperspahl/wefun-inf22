@@ -72,6 +72,21 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
+#smallTable {
+    caption-side: bottom;
+}
+
+caption {
+    background-color: var(--surface-4);
+    padding-top: 0.25em;
+    padding-bottom: 0.5em;
+}
+
+hr {
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
 /* Header */
 header {
     background-color: var(--surface-2);
@@ -279,6 +294,10 @@ table, td {
 .treppen-stufe {
     background: var(--brand);
     color: var(--surface-1);
+    width: 33%;
+}
+.treppe{
+    table-layout: fixed;
 }
 
 footer {

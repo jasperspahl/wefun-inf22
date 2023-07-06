@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Matchup Tabelle</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/cb31073fef.js" crossorigin="anonymous"></script>
     <style>
         table {
             border-collapse: collapse;
@@ -19,6 +20,27 @@
     </style>
 </head>
 <body>
+<header>
+    <div class="header-logo-container">
+        <img class="header-logo" src="img/ping-pong-red-blue.png" alt="logo">
+        <h2 class="header-title">Rangliste</h2>
+    </div>
+
+    <nav>
+        <input type="checkbox" id="nav-toggle" hidden>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <i class="fas fa-bars"></i>
+        </label>
+        <div class="nav-items">
+            <ul><a href="index.html" class="nav-link">Zurück zur Hauptseite</a></ul>
+            <ul><a href="turnier2020.html" class="nav-link"><i class="fa-solid fa-table-cells"></i>&nbsp;Turnier 2020</a></ul>
+            <ul><a href="turnier2021.html" class="nav-link"><i class="fa-solid fa-table-cells"></i>&nbsp;Turnier 2021</a></ul>
+            <ul><a href="turnier2022.html" class="nav-link"><i class="fa-solid fa-table-cells"></i>&nbsp;Turnier 2022</a></ul>
+            <ul><a href="turnier2023.html" class="nav-link"><i class="fa-solid fa-table-cells"></i>&nbsp;Turnier 2023</a></ul>
+            <ul><a href="rangliste.html" class="nav-link"><i class="fa-solid fa-ranking-star"></i>&nbsp;Rangliste</a></ul>
+        </div>
+    </nav>
+</header>
 <main>
     <audio loop autoplay>
         <source src="mp3/free-crowd-cheering-sounds.mp3" type="audio/mpeg">
