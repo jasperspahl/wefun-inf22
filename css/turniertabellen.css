@@ -1,29 +1,67 @@
 /* Turniertabellen Unterseiten */
 
 .turniertabelle-wrapper{
-    display: grid;
-    grid-template-areas: 
-        "b b"
-        "t l"; 
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr auto;
-    gap: 1em;
-    padding-left: 3em;
     padding-bottom: 3em;
 }
-
-.turniertabelle-wrapper > section {
-    grid-area: b;
-}
-
-.turniertabelle-wrapper > article {
-    grid-area: t;
-}
-
 .turniertabelle-wrapper > aside {
-    grid-area: l;
-    padding-left: 1.5em;
+    padding-left: 1em;
+    display: block;
 }
+.turniertabelle {
+    table-layout: fixed;
+    width: fit-content;
+}
+.turniertabelle td {
+    word-wrap: break-word;
+}
+
+@media (min-width: 600px) {
+    .turniertabelle-wrapper{
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    .turniertabelle-wrapper > aside {
+        display: grid;
+        grid-template-areas:
+            "u1 u2"
+            "liste treppe";
+    }
+    .turniertabelle-wrapper > aside:first-child {
+        grid-area: u1;
+    }
+    .turniertabelle-wrapper > aside:nth-child(3) {
+        grid-area: u2;
+    }
+    .turniertabelle-wrapper > aside > ol {
+        grid-area: liste;
+        margin-bottom: 2em;
+    }
+    .turniertabelle-wrapper > aside > table {
+        grid-area: treppe;
+    }
+}
+@media (min-width: 1200px) {
+    .turniertabelle-wrapper{
+        display: grid;
+        grid-template-areas:
+            "beschreibung beschreibung"
+            "tabelle u2";
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: auto;
+        gap: 1em;
+    }
+    .turniertabelle-wrapper > section {
+        grid-area: beschreibung;
+    }
+    .turniertabelle-wrapper > article {
+        grid-area: tabelle;
+    }
+    .turniertabelle {
+        width: 100%;
+    }
+    .turniertabelle-wrapper > aside {
+        display: block;
+    }
 
 .turniertabelle {
     width: 100%;

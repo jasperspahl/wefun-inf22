@@ -333,6 +333,10 @@ abbr {
     opacity: 0.7;
 }
 
+#section-siegertreppchen{
+    margin-bottom: 3em;
+}
+
 @media (min-width: 300px) {
 
     body{
@@ -403,6 +407,8 @@ abbr {
 @media (min-width: 460px) {
     #smallTable{
         display: table;
+        table-layout: fixed;
+        width: fit-content;
     }
     .thumb {
         float: right;
@@ -436,6 +442,7 @@ abbr {
     .nav-items {
         position: unset;
         display: flex;
+        flex-wrap: wrap;
     }
     .nav-items ul {
         flex-direction: row;
@@ -448,6 +455,9 @@ abbr {
     .nav-items li {
         width: auto;
         display: block;
+    }
+    header {
+        height: fit-content;
     }
 }
 
