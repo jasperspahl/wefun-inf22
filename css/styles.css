@@ -294,6 +294,10 @@ table, td {
 .treppen-stufe {
     background: var(--brand);
     color: var(--surface-1);
+    width: 33%;
+}
+.treppe{
+    table-layout: fixed;
 }
 
 footer {
