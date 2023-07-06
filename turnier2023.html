@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/turniertabellen.css">
-    <link rel="icon" href="/img/ping-pong-red-blue.png">
+    <link rel="icon" href="img/table-tennis.png">
     <title>Tischtennisverein DHBW</title>
     <script src="https://kit.fontawesome.com/cb31073fef.js" crossorigin="anonymous"></script>
     <script src="js/sieger-erscheinen-lassen.js " defer></script>
 </head>
 
-<body>
+<body onload="gamesAndPlayers()">
 <header>
     <div class="header-logo-container">
-        <img class="header-logo" src="img/ping-pong-red-blue.png" alt="logo">
+        <img class="header-logo" src="img/table-tennis.png" alt="logo">
         <h2 class="header-title">Turnier 2023</h2>
     </div>
     <nav>
@@ -50,52 +50,52 @@
                     <td class="beschriftung"><h3>Finale</h3></td>
                 </tr>
                 <tr>
-                    <td>Silvia Bender</td>
-                    <td rowspan="2"><time datetime="2023-05-29 18:00">29.05.2023, 18:00</time></td>
-                    <td rowspan="4"><time datetime="2023-06-05 18:00">05.06.2023, 18:00</time></td>
-                    <td rowspan="8"><time datetime="2023-06-08 18:00">08.06.2023, 18:00</time></td>
-                    <td rowspan="16"><time datetime="2023-06-09 18:00">09.06.2023, 18:00</time></td>
+                    <td id="spieler1">Silvia Bender</td>
+                    <td rowspan="2" id="spiel1"><time datetime="2023-05-29 18:00">29.05.2023, 18:00</time></td>
+                    <td rowspan="4" id="spiel9"><time datetime="2023-06-05 18:00">05.06.2023, 18:00</time></td>
+                    <td rowspan="8" id="spiel13"><time datetime="2023-06-08 18:00">08.06.2023, 18:00</time></td>
+                    <td rowspan="16" id="spiel15"><time datetime="2023-06-09 18:00">09.06.2023, 18:00</time></td>
                 </tr>
-                <tr><td>Rebecca Taylor</td></tr>
+                <tr><td id="spieler2">Rebecca Taylor</td></tr>
                 <tr>
-                    <td>Erika Pollmann</td>
-                    <td rowspan="2"><time datetime="2023-05-30 18:00">30.05.2023, 18:00</time></td>
+                    <td id="spieler3">Erika Pollmann</td>
+                    <td rowspan="2" id="spiel2"><time datetime="2023-05-30 18:00">30.05.2023, 18:00</time></td>
                 </tr>
-                <tr><td>Fabienne Fass</td></tr>
+                <tr><td id="spieler4">Fabienne Fass</td></tr>
                 <tr>
-                    <td>Sibylle Gerold</td>
-                    <td rowspan="2"><time datetime="2023-05-31 18:00">31.05.2023, 18:00</time></td>
-                    <td rowspan="4"><time datetime="2023-06-06 18:00">06.06.2023, 18:00</time></td>
+                    <td id="spieler5">Sibylle Gerold</td>
+                    <td rowspan="2" id="spiel3"><time datetime="2023-05-31 18:00">31.05.2023, 18:00</time></td>
+                    <td rowspan="4" id="spiel10"><time datetime="2023-06-06 18:00">06.06.2023, 18:00</time></td>
                 </tr>
-                <tr><td>Tom Pösl</td></tr>
+                <tr><td id="spieler6">Tom Pösl</td></tr>
                 <tr>
-                    <td>Herta Kremers</td>
-                    <td rowspan="2"><time datetime="2023-06-01 18:00">01.06.2023, 18:00</time></td>
+                    <td id="spieler7">Herta Kremers</td>
+                    <td rowspan="2" id="spiel4"><time datetime="2023-06-01 18:00">01.06.2023, 18:00</time></td>
                 </tr>
-                <tr><td>Marie Lorenz</td></tr>
+                <tr><td id="spieler8">Marie Lorenz</td></tr>
                 <tr>
-                    <td>Stefanie Raißle</td>
-                    <td rowspan="2"><time datetime="2023-05-29 19:00">29.05.2023, 19:00</time></td>
-                    <td rowspan="4"><time datetime="2023-06-05 19:00">05.06.2023, 19:00</time></td>
-                    <td rowspan="8"><time datetime="2023-06-08 19:00">08.06.2023, 19:00</time></td>
+                    <td id="spieler9">Stefanie Raißle</td>
+                    <td rowspan="2" id="spiel5"><time datetime="2023-05-29 19:00">29.05.2023, 19:00</time></td>
+                    <td rowspan="4" id="spiel11"><time datetime="2023-06-05 19:00">05.06.2023, 19:00</time></td>
+                    <td rowspan="8" id="spiel14"><time datetime="2023-06-08 19:00">08.06.2023, 19:00</time></td>
                 </tr>
-                <tr><td>Karin Tewes</td></tr>
+                <tr><td id="spieler10">Karin Tewes</td></tr>
                 <tr>
-                    <td>Zacharias Neff</td>
-                    <td rowspan="2"><time datetime="2023-05-30 19:00">30.05.2023, 19:00</time></td>
+                    <td id="spieler11">Zacharias Neff</td>
+                    <td rowspan="2" id="spiel6"><time datetime="2023-05-30 19:00">30.05.2023, 19:00</time></td>
                 </tr>
-                <tr><td>Joshua Rupf</td></tr>
+                <tr><td id="spieler12">Joshua Rupf</td></tr>
                 <tr>
-                    <td>Pedro Fernandez</td>
-                    <td rowspan="2"><time datetime="2023-05-31 19:00">31.05.2023, 19:00</time></td>
-                    <td rowspan="4"><time datetime="2023-06-06 19:00">06.06.2023, 19:00</time></td>
+                    <td id="spieler13">Pedro Fernandez</td>
+                    <td rowspan="2" id="spiel7"><time datetime="2023-05-31 19:00">31.05.2023, 19:00</time></td>
+                    <td rowspan="4" id="spiel12"><time datetime="2023-06-06 19:00">06.06.2023, 19:00</time></td>
                 </tr>
-                <tr><td>Sabiene Spitz</td></tr>
+                <tr><td id="spieler14">Sabiene Spitz</td></tr>
                 <tr>
-                    <td>Alena Kahle</td>
-                    <td rowspan="2"><time datetime="2023-06-01 19:00">01.06.2023, 19:00</time></td>
+                    <td id="spieler15">Alena Kahle</td>
+                    <td rowspan="2" id="spiel8"><time datetime="2023-06-01 19:00">01.06.2023, 19:00</time></td>
                 </tr>
-                <tr><td>Edgar Drögemüller</td></tr>
+                <tr><td id="spieler16">Edgar Drögemüller</td></tr>
             </tbody>
         </table>
     </article>
@@ -124,17 +124,22 @@
         <table class="treppe">
             <tr>
                 <td></td>
+                <td id="Gold"></td>
+            </tr>
+            <tr>
+                <td id="Silber"></td>
                 <td rowspan="3" class="treppen-stufe"><i class="fa-solid fa-medal fa-beat" style="color: #ffff00;"></i></td>
                 <td></td>
             </tr>
             <tr>
                 <td rowspan="2" class="treppen-stufe"><i class="fa-solid fa-medal fa-beat" style="color: #c0c0c0;"></i></td>
-                <td></td>
+                <td id="Bronze"></td>
             </tr>
             <tr>
                 <td class="treppen-stufe"><i class="fa-solid fa-medal fa-beat" style="color: #804000;"></i></td>
             </tr>
         </table>
+
     </aside>
 </div>
 </body>

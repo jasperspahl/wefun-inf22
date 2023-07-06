@@ -239,19 +239,39 @@ main {
     visibility: visible;
 }
 
-/* image overlay */
-.imgContainer {
+/* Thumb */
+.thumb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
     position: relative;
 }
-  
-.pingPongImage {
-    display: block;
-    width: 100%;
-    height: auto;
-    padding: 0;
-
+.thumb-right {
+    float: right;
+    clear: right;
+    margin: 0 2em 1em 2em;
 }
-  
+.thumb img {
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    max-height: 10em;
+    object-fit: contain;
+    position: relative;
+    margin-top: 0;
+}
+
+/* image overlay */
+.imageText {
+    color: var(--text-1);
+    font-size: 0.8em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 .overlay {
     position: absolute;
     top: 0;
@@ -264,19 +284,8 @@ main {
     transition: .5s ease;
     background-color: #004aba;
 }
-  
-.imgContainer:hover .overlay {
+.thumb-right:hover .overlay {
     opacity: 1;
-}
-  
-.imageText {
-    color: var(--text-1);
-    font-size: 0.8em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
 }
 
 table, td {
@@ -395,6 +404,27 @@ abbr {
     #smallTable{
         display: table;
     }
+    .thumb {
+        float: right;
+        margin: 0 0 1em 1em;
+        max-width: 15em;
+        background: var(--surface-2);
+        border: 1px solid var(--text-2);
+    }
+    .thumb img {
+        width: 100%;
+        height: auto;
+    }
+    .thumb-right {
+        float: right;
+        clear: right;
+        margin: 0 0 .5em .5em;
+    }
+    .thumb-left {
+        float: left;
+        clear: left;
+        margin: 0 .5em .5em 0;
+    }
 }
 @media (min-width: 600px) {
     body{
@@ -446,6 +476,8 @@ abbr {
         font-size: 1.5em;
     }
 }
+
+
 /* Helper */
 .center {
     text-align: center;
@@ -481,50 +513,4 @@ abbr {
     vertical-align: super;
     font-size: small;
 }
-
-/* Thumb */
-.thumb {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: .5em;
-}
-.thumb img {
-    width: 100vw;
-    height: auto;
-    max-height: 10em;
-    object-fit: contain;
-    position: relative;
-    margin-top: 3em;
-}
-.thumb-caption {
-    font-size: 0.8em;
-    text-align: center;
-}
-@media (min-width: 480px) {
-    .thumb {
-        float: right;
-        margin: 0 0 1em 1em;
-        max-width: 15em;
-        background: var(--surface-2);
-        border: 1px solid var(--text-2);
-        /* padding: 0.5em; */
-    }
-    .thumb img {
-        width: 100%;
-        height: auto;
-    }
-    .thumb-right {
-        float: right;
-        clear: right;
-        margin: 0 0 .5em .5em;
-    }
-    .thumb-left {
-        float: left;
-        clear: left;
-        margin: 0 .5em .5em 0;
-    }
-
-}
-
 
