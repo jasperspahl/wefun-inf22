@@ -14,6 +14,39 @@
 .turniertabelle td {
     word-wrap: break-word;
 }
+input {
+    width: 2em;
+    height: 1.2em;
+    margin-bottom: 1em;
+    text-align: center;
+    margin-top: 0.3em;
+    background-color: var(--text-2-dark);
+    color: var(--surface-1);
+    border: 0;
+    border-right: 0.1em solid var(--surface-1);
+    border-radius: .5em;
+}
+
+button {
+    width: 2.5em;
+    height: 1.5em;
+    display: inline-block;
+    font-weight: bold;
+    background-color: #3498db;
+    border-radius: .5em;
+    border-color: #1f618d;
+    transition: background-color 0.3s ease;
+}
+  
+button:hover {
+    background-color: #2980b9;
+    cursor: pointer;
+}
+  
+.turniertabelle p{
+    margin: 0;
+    padding: 0;
+}
 
 @media (min-width: 600px) {
     .turniertabelle-wrapper{
@@ -38,6 +71,9 @@
     }
     .turniertabelle-wrapper > aside > table {
         grid-area: treppe;
+    }
+    input {
+        width: 2.5em;
     }
 }
 @media (min-width: 1200px) {
@@ -67,24 +103,7 @@
         width: 100%;
     }
 
-    input {
-        width: 2.5em;
-        height: 1.2em;
-        margin-bottom: 1em;
-        text-align: center;
-        margin-top: 0.3em;
-    }
 
-    button {
-        width: 2em;
-        height: 1.5em;
-        font-size: 0.8em;
-    }
-
-    .turniertabelle p{
-        margin: 0;
-        padding: 0;
-    }
 
     .treppe td {
         padding: 0.5em;
