@@ -21,6 +21,7 @@ main {
     max-width: 100%;
     width: 100%;
     grid-area: Main;
+    padding-bottom: 3em;
 }
 
 table {

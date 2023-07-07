@@ -75,6 +75,9 @@ body {
 #smallTable {
     caption-side: bottom;
 }
+#section-matchups {
+    display: none;
+}
 
 caption {
     background-color: var(--surface-4);
@@ -206,9 +209,7 @@ main {
     font-size: 1.25em;
     grid-area: main;
 }
-#smallTable{
-    display: none;
-}
+
 #info + ul > li{
     list-style-type: "\1F44D";
     margin: 0;
@@ -303,7 +304,6 @@ table, td {
 .treppe, .treppe td{
     border: 0;
     border-collapse: collapse;
-    display: none;
 }
 .treppe td{
     height: 1em;
@@ -403,13 +403,20 @@ abbr {
     .treppe > tbody > tr > td + td > i {
         margin-bottom: 1em;
     }
-}
-@media (min-width: 460px) {
-    #smallTable{
-        display: table;
+
+    #smallTable {
         table-layout: fixed;
         width: fit-content;
+        display: table;
     }
+    #smallTable td {
+        word-wrap: break-word;
+    }
+    #section-matchups {
+        display: block;
+    }
+}
+@media (min-width: 460px) {
     .thumb {
         float: right;
         margin: 0 0 1em 1em;
