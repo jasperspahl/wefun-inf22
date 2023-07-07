@@ -7,13 +7,15 @@
     padding-left: 1em;
     display: block;
 }
-.turniertabelle {
-    table-layout: fixed;
-    width: fit-content;
+.turniertabelle p{
+    margin: 0;
+    padding: 0;
 }
-.turniertabelle td {
-    word-wrap: break-word;
-}
+.turniertabelle{
+    overflow-y: scroll;
+    display: block;
+ }
+
 input {
     width: 2em;
     height: 1.2em;
@@ -26,7 +28,6 @@ input {
     border-right: 0.1em solid var(--surface-1);
     border-radius: .5em;
 }
-
 button {
     width: 2.5em;
     height: 1.5em;
@@ -37,17 +38,21 @@ button {
     border-color: #1f618d;
     transition: background-color 0.3s ease;
 }
-  
 button:hover {
     background-color: #2980b9;
     cursor: pointer;
 }
-  
-.turniertabelle p{
-    margin: 0;
-    padding: 0;
-}
 
+@media (min-width: 300px) {
+    .turniertabelle {
+        table-layout: fixed;
+        width: fit-content;
+        display: table;
+    }
+    .turniertabelle td {
+        word-wrap: break-word;
+    }
+}
 @media (min-width: 600px) {
     .turniertabelle-wrapper{
         padding-left: 3em;
