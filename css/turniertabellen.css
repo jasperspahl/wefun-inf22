@@ -22,11 +22,13 @@ input {
     margin-bottom: 1em;
     text-align: center;
     margin-top: 0.3em;
-    background-color: var(--text-2-dark);
-    color: var(--surface-1);
-    border: 0;
-    border-right: 0.1em solid var(--surface-1);
+    background-color: var(--surface-4);
+    color: var(--text-1);
+    border: 0.1em solid var(--text-1);
     border-radius: .5em;
+    border-width: .05em;
+    margin: .5em;
+    padding-bottom: .2em;
 }
 button {
     width: 2.5em;
@@ -36,6 +38,8 @@ button {
     background-color: #3498db;
     border-radius: .5em;
     border-color: #1f618d;
+    font-weight: 400;
+    color: var(--text-1);
     transition: background-color 0.3s ease;
 }
 button:hover {
